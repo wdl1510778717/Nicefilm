@@ -1,0 +1,231 @@
+@import url(base.css);
+
+/*头部导航部分开始*/
+.top-nav{
+	z-index: 200;
+	margin:0 auto;
+	height: 128px;
+    width: 100%;
+	background: transparent;
+	position: fixed;
+	color: #333;
+	padding-top: 28px;
+	transition: .36s ease;
+}
+.top-nav-scroll{
+	z-index: 200;
+	margin:0 auto;
+	height: 66px;
+    width: 100%;
+	background: #f24546;
+	box-shadow:0 0 10px rgba(0,0,0,0.1);
+	position: fixed;
+	color: #333;
+	padding-top: 0px;
+	transition: .36s ease;
+}
+.wraper{
+	height: 100%;
+}
+.nav-content{
+	max-width: 1300px;
+	height: 62px;
+	width: 96%;
+	margin:0 auto;
+}
+/*左边logo*/
+.logo{
+    float: left;
+    height: 100%;
+    margin-right: 50px;
+}
+.logo a{
+	margin-top: 14px;
+	display: block;
+}
+.logo img{
+	height: 34px !important;
+}
+
+/*右边导航*/
+.nav-bar{
+	float: right;
+	height: 100%;
+}
+.bar-content{
+    height: 100%;
+}
+.nav{
+	height: 100%;
+	display: block;
+}
+.nav li a{
+	position: relative;
+	line-height: 62px;
+	height: 100%;
+	color: white;
+	font-size:14px;
+	display: block;
+    padding: 0 26px;
+    margin-bottom:2px solid transparent;
+}
+.nav li{
+	height: 100%;
+	float: left;
+	position: relative;
+    float: left;
+    cursor: pointer;
+}
+/*导航下部小圆点*/
+
+/*.nav li:hover #white-circle-top:after{
+    position: absolute;
+    bottom:9px;
+    left: 50%;
+    width: 3px;
+    height: 3px;
+    margin-left: -1px;
+    padding: 0;
+    content: "";
+    transition: .36s ease;
+    opacity:1;
+    border-radius: 50%;
+    background-color: #fff;
+}*/
+.actived:after{
+	position: absolute;
+    bottom:9px;
+    left: 50%;
+    width: 3px;
+    height: 3px;
+    margin-left: -1px;
+    padding: 0;
+    content: "";
+    transition: .36s ease;
+    opacity:1;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.leave-nav-box{
+	width: 182px;
+	background: #FF4D4D;
+	position: absolute;
+	top:62px;
+	left:-34px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);;
+}
+/*.nav li:hover #hovers:after{
+	position: absolute;
+    bottom:9px;
+    left: 50%;
+    width: 3px;
+    height: 3px;
+    margin-left: -1px;
+    padding: 0;
+    content: "";
+    transition: .36s ease;
+    opacity:1;
+    border-radius: 50%;
+    background-color: #fff;
+}*/
+.white-circle-bar:after{
+    position: absolute;
+    bottom:6px;
+    left: 50%;
+    width: 3px;
+    height: 3px;
+    margin-left: -1px;
+    padding: 0;
+    content: "";
+    transition:.36s ease;
+    opacity:1;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.leave-nav-box .leave-nav-bar{
+	box-sizing: border-box;
+	display: block;
+	text-align: center;
+	line-height: 48px !important;
+	height: 48px !important;
+	font-size:12px !important; 
+}
+/*banner图片*/
+.banner{
+	position: relative;
+	height: 480px;
+	width: 100%;
+}
+/*内容部分*/
+section{
+	position: relative;
+    width: 100%;
+}
+.cooperativepartner-content-box{
+	position: relative;
+	width: 96%;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding-top: 110px;
+}
+.cooperativepartner-content{
+	position: relative;
+	display:block;
+	width: 100%;
+}
+.cooperativepartner-content li{
+	position: relative;
+	margin-bottom: 50px;
+	float: left;
+    width: calc(100% / 7 - 0px);
+}
+.cooperativepartner-content li:after {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    height: 40px;
+    content: "";
+    border-right: 1px solid rgba(170, 170, 170, 0.3);
+}
+.cooperativepartner-content li img:hover{
+	cursor: pointer;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+.cooperativepartner-content li img{
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+	transition: all .35s ease-out;
+}
+.cooperativepartner-bottom{
+	overflow: hidden;
+	width: 100%;
+	height: 46px;
+	text-align: center;
+    padding-bottom: 40px;
+    padding-top: 80px;
+}
+.cooperativepartner-bottom .circle-more{
+	display: block;
+	width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 2px solid #c9c9c9;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 46px;
+    font-size: 22px;
+    color: #c6c6c6;
+    transition:all 0.36s ease;
+    margin: 0 auto;
+}
+.circle-more span{
+	display: block;
+	margin-left: 2px;
+	margin-top: -2px;
+}
+.circle-more:hover{
+	border: 2px solid #F24546;
+	background: #F24546;
+	color: white;
+}
